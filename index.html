@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Background Hearts Container -->
+    <div id="hearts-bg"></div>
+
+    <!-- 1. Hero / Welcome Section -->
+    <section id="hero" class="fullscreen-section">
+        <div class="hero-content fade-in-up">
+            <h1 class="hero-title">Welcome My Love ❤️</h1>
+            <p class="hero-subtitle">You are the most special person in my life.</p>
+            <div class="scroll-indicator">
+                <span>Scroll down</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Photo Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Memories</h2>
+            <div class="gallery-grid">
+                <!-- Personal Photos -->
+                <div class="gallery-item fade-in-up" data-delay="0.1s">
+                    <img src="assets/photo1.jpg" alt="Romantic Memory 1">
+                </div>
+                <div class="gallery-item fade-in-up" data-delay="0.2s">
+                    <img src="assets/photo2.jpg" alt="Romantic Memory 2">
+                </div>
+                <div class="gallery-item fade-in-up" data-delay="0.3s">
+                    <img src="assets/photo3.jpg" alt="Romantic Memory 3">
+                </div>
+                <div class="gallery-item fade-in-up" data-delay="0.4s">
+                    <img src="assets/photo4.jpg" alt="Romantic Memory 4">
+                </div>
+                <div class="gallery-item fade-in-up" data-delay="0.5s">
+                    <img src="assets/photo5.jpg" alt="Romantic Memory 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- 3. Love Message Section -->
+    <section id="message" class="section">
+        <div class="container">
+            <div class="glass-card fade-in-up">
+                <h2 class="card-title">My Heart Belongs to You</h2>
+                <p class="card-message">
+                    From the moment we met, my life has been brighter, happier, and filled with a kind of love I never
+                    knew existed. You are my dream come true, my safe haven, and my greatest adventure. I cherish every
+                    moment we share and look forward to a lifetime of beautiful memories together.
+                </p>
+                <p class="card-signature">With all my love,</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Heart Animation Section -->
+    <section id="interactive-heart" class="section">
+        <div class="container text-center fade-in">
+            <h2 class="section-title">Touch My Heart</h2>
+            <div class="heart-container" id="main-heart">
+                <div class="heart-shape"></div>
+            </div>
+            <p class="instruction-text">Click to share the love!</p>
+            <p id="hidden-love-message" class="hidden-message">I love you papu ❤️</p>
+        </div>
+    </section>
+
+    <!-- 5. Final Surprise Section -->
+    <section id="surprise" class="fullscreen-section">
+        <div class="surprise-content text-center">
+            <h1 class="final-message fade-in-scale">I Love You <br><span>Forever ❤️</span></h1>
+            <button id="celebrate-btn" class="glass-btn fade-in-up" data-delay="0.5s">Magic Touch ✨</button>
+        </div>
+        <!-- Confetti Canvas -->
+        <canvas id="confetti-canvas"></canvas>
+    </section>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
